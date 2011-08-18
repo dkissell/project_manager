@@ -1,0 +1,15 @@
+<header>
+  <p>Project</p>
+</header>
+
+<div class="project">
+  <h1><%= project_title_links(@project) %></h1>
+
+  <%= render @project.roles %>
+
+  <p>
+    <%= link_to 'Add a new role', new_project_role_path(@project) %>
+  </p>
+</div>
+
+<%= link_to raw('&larr; Back to Projects'), projects_path %>

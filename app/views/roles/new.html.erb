@@ -1,0 +1,6 @@
+<header>
+  <p>Create Role for: <%= @role.project.title %></p>
+</header>
+<%= render 'form' %>
+
+<%= link_to raw("&larr; Back to Project"), project_path(@role.project) %>
